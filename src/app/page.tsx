@@ -20,10 +20,12 @@ export default function Home() {
     {
       text: "Github",
       url: "https://github.com/chinmayghule",
+      openInNewTab: true,
     },
     {
       text: "LinkedIn",
       url: "https://www.linkedin.com/in/chinmayghule/",
+      openInNewTab: true,
     },
   ];
 
