@@ -1,5 +1,10 @@
 import { ArrowLeft } from "lucide-react";
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Chinmay Ghule | About Me",
+};
 
 function AboutMe() {
   const aboutMeContent = [
@@ -31,7 +36,7 @@ function AboutMe() {
           {aboutMeContent.map((text: string, index: number) => (
             <p
               key={index}
-              className="text-left sm:text-justify leading-7 sm:leading-9 text-sm sm:text-2xl font-light"
+              className="text-left sm:text-justify leading-7 sm:leading-9 text-base sm:text-2xl font-light"
             >
               {text.trim()}
             </p>

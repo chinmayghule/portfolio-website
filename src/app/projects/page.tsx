@@ -3,6 +3,11 @@ import { Project } from "@/types";
 import ProjectInfo from "./_components/ProjectInfo";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Chinmay Ghule | Projects",
+};
 
 function Projects() {
   const projects: Project[] = [

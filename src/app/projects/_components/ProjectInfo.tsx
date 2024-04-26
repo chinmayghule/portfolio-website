@@ -20,7 +20,7 @@ function ProjectInfo({
   return (
     <article className="max-w-[90vw] sm:max-w-[60vw] mx-auto">
       <h1 className="text-2xl sm:text-4xl font-medium">{name}</h1>
-      <p className="text-xs sm:text-xl mt-4">{description}</p>
+      <p className="text-base sm:text-xl mt-4">{description}</p>
 
       <div className="mt-4 flex flex-col gap-4 sm:gap-0 sm:flex-row sm:justify-between">
         {/* add links for github */}
@@ -69,7 +69,7 @@ function ProjectInfo({
         <CarouselNext className="text-black !-right-4" />
       </Carousel>
 
-      <p className="text-xs sm:text-xl text-center underline mt-12">
+      <p className="text-sm sm:text-xl text-center underline mt-12">
         More projects coming soon
       </p>
     </article>
@@ -83,7 +83,7 @@ function GithubCheckout({
 }) {
   return (
     <div className=" flex flex-row gap-4 items-center justify-between">
-      <p className="text-sm sm:text-xl">Github:</p>
+      <p className="text-base sm:text-xl">Github:</p>
       <div className="flex items-center gap-2">
         {githubUrl.map(
           (githubUrl: { url: string; linkText: string }, index: number) => (

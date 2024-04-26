@@ -1,4 +1,9 @@
 import WorkInProgress from "@/components/WorkInProgress";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Chinmay Ghule | Blogs",
+};
 
 function Blogs() {
   return (
