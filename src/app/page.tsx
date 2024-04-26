@@ -30,10 +30,10 @@ export default function Home() {
   ];
 
   return (
-    <main className="grid place-items-center min-h-screen bg-gradient-to-br from-[#1e1e28] to-[#4d4f60]">
+    <main className="grid place-items-center min-h-screen bg-gradient-to-br from-[#1e1e28] to-[#4d4f60] py-0 sm:py-0">
       <section>
         <ImgWrapper />
-        <h1 className="uppercase font-normal  text-2xl sm:text-4xl mt-8 text-center border-b-2 border-b-white pb-2">
+        <h1 className="uppercase font-normal text-2xl sm:text-4xl mt-8 text-center border-b-2 border-b-white pb-2">
           Chinmay Ghule
         </h1>
 

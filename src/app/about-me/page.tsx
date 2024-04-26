@@ -20,18 +20,18 @@ function AboutMe() {
 
   return (
     <main className="min-h-screen p-6">
-      <section className="w-full max-w-[80ch] mx-auto mt-4 sm:mt-12 pb-8">
-        <header className="flex items-center gap-4 text-4xl font-medium text-left pb-2 border-b-2 border-b-white">
+      <section className="w-full max-w-[80ch] mx-auto mt-0 sm:mt-12 pb-8">
+        <header className="flex items-center gap-4 text-2xl sm:text-4xl font-medium text-left pb-2 border-b-2 border-b-white">
           <Link href="/">
             <ArrowLeft />
           </Link>
           <h1 className="">About Me</h1>
         </header>
-        <div className="flex flex-col gap-6 mt-12">
+        <div className="flex flex-col gap-6 mt-8 sm:mt-12">
           {aboutMeContent.map((text: string, index: number) => (
             <p
               key={index}
-              className="text-justify leading-9 text-2xl font-light"
+              className="text-left sm:text-justify leading-7 sm:leading-9 text-sm sm:text-2xl font-light"
             >
               {text.trim()}
             </p>
