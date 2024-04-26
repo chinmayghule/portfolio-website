@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta property="og:image" content="opengraph-image.jpg" />
+        <meta property="og:image" content="/opengraph-image.jpg" />
         <meta property="og:image:alt" content="Chinmay Ghule" />
         <meta property="og:title" content="Chinmay Ghule" />
         <meta
