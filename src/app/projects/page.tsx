@@ -12,6 +12,59 @@ export const metadata: Metadata = {
 function Projects() {
   const projects: Project[] = [
     {
+      name: "gTalk",
+      description:
+        "A messaging app inspired by WhatsApp and built usind Next.js, Express.js and websockets.",
+      screenshotUrls: [
+        {
+          url: "/gTalk/gTalk-signup-page.png",
+          altText: "gTalk signup page",
+          blurDataUrl: "/gTalk/gTalk-signup-page-tiny.png",
+        },
+        {
+          url: "/gTalk/gTalk-login-page.png",
+          altText: "gTalk login page",
+          blurDataUrl: "/gTalk/gTalk-login-page-tiny.png",
+        },
+        {
+          url: "/gTalk/gTalk-chat-page.png",
+          altText: "gTalk chat page",
+          blurDataUrl: "/gTalk/gTalk-chat-page-tiny.png",
+        },
+        {
+          url: "/gTalk/gTalk-new-chat-page.png",
+          altText: "gTalk new chat page",
+          blurDataUrl: "/gTalk/gTalk-new-chat-page-tiny.png",
+        },
+        {
+          url: "/gTalk/gTalk-friends-page.png",
+          altText: "gTalk friends page",
+          blurDataUrl: "/gTalk/gTalk-friends-page-tiny.png",
+        },
+        {
+          url: "/gTalk/gTalk-new-friend-page.png",
+          altText: "gTalk new friend page",
+          blurDataUrl: "/gTalk/gTalk-new-friend-page-tiny.png",
+        },
+        {
+          url: "/gTalk/gTalk-profile-page.png",
+          altText: "gTalk profile page",
+          blurDataUrl: "/gTalk/gTalk-profile-page-tiny.png",
+        },
+      ],
+      githubUrl: [
+        {
+          url: "https://github.com/chinmayghule/gTalk",
+          linkText: "Client",
+        },
+        {
+          url: "https://github.com/chinmayghule/gtalk-server",
+          linkText: "Server",
+        },
+      ],
+      liveUrl: "https://g-talk.vercel.app/",
+    },
+    {
       name: "gTodos",
       description:
         "A simple todo app. It includes authentication, theming, and the ability to keep track of multiple todo-lists.",
@@ -59,13 +112,6 @@ function Projects() {
       ],
       liveUrl: "https://gtodos.onrender.com/",
     },
-    // {
-    //   name: "Work in progress",
-    //   description: "This page is under construction",
-    //   screenshotUrls: [],
-    //   githubUrl: [],
-    //   liveUrl: "",
-    // },
   ];
 
   return (
@@ -77,10 +123,14 @@ function Projects() {
         <h1 className="">Projects</h1>
       </header>
 
-      <section className="mt-12">
+      <section className="mt-12 lg:mt-20 flex flex-col gap-12 lg:gap-20">
         {projects.map((project: Project, index: number) => (
           <ProjectInfo key={index} {...project} />
         ))}
+
+        <p className="text-sm sm:text-xl text-center underline mt-12">
+          More projects coming soon
+        </p>
       </section>
     </main>
   );

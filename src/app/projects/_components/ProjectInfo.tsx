@@ -68,10 +68,6 @@ function ProjectInfo({
         <CarouselPrevious className="text-black !-left-4" />
         <CarouselNext className="text-black !-right-4" />
       </Carousel>
-
-      <p className="text-sm sm:text-xl text-center underline mt-12">
-        More projects coming soon
-      </p>
     </article>
   );
 }

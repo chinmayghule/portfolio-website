@@ -5,14 +5,6 @@ function WorkInProgress() {
   return (
     <main className="min-h-screen grid place-items-center px-6">
       <section className="flex flex-col gap-4">
-        <Image
-          src="/work-in-progress.svg"
-          alt="Work in progress"
-          width={500}
-          height={500}
-          priority={true}
-          className="rounded-3xl"
-        />
         <p className="text-center text-xl sm:text-2xl font-light mt-6">
           Sorry! This page is under construction.
         </p>
